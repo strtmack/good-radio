@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "radiowaves",
-    "slug": "radiowaves",
+    "name": "drift",
+    "slug": "drift",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#151515"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -17,7 +17,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
