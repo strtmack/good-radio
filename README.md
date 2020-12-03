@@ -1,6 +1,6 @@
 # ((( drift )))
 
-![Screenshot] (/assets/screenshot.png)
+![Screenshot] (https://github.com/stuart-mack/drift/blob/master/assets/screenshot.png)
 
 ## About
 
