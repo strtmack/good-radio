@@ -26,18 +26,6 @@ const stationList = [
     info: "The female led online community radio station based in South London."
   },
   {
-    title: 'PBS 106.7FM',
-    uri: 'https://cast-1.nucleusstreaming.com:4443/pbsfm_live_64.mp3',
-    imageSource: 'https://www.pbsfm.org.au/sites/default/files/pbs-logo-stacked-col-2014.gif',
-    info: 'Since 1979, community broadcaster PBS 106.7FM has been an integral player in Melbourne’s diverse music community – with more than 80 specialist music programs ranging from soul to garage to country to jazz – PBS is dedicated to nurturing, inspiring and championing Melbourne’s diverse music community.',
-  },
-  {
-    title: 'Skylab Radio',
-    uri: 'https://secure-stream.skylab-radio.com/live',
-    imageSource: 'https://skylab-radio.com/images/3991625fa749fb45e49a04285c716012.png',
-    info: 'Welcome to Skylab Radio Melbourne. Reclining your spirit and mind since 2018. Streaming from Romantica Studios, East Brunswick.',
-  },
-  {
     title: 'Netil Radio',
     uri: 'https://netilradio.out.airtime.pro/netilradio_a',
     imageSource: 'https://pbs.twimg.com/profile_images/1322518611613913096/678A3IGq.jpg',
@@ -78,6 +66,18 @@ const stationList = [
     uri: 'https://stream-mixtape-geo.ntslive.net/mixtape',
     imageSource: 'https://cdn-profiles.tunein.com/s309377/images/logog.jpg?t=159537',
     info: 'Infinite mixtapes from NTS. Meditative, relaxing and beatless: ambient, drone and ragas.',
+  },
+    {
+    title: 'PBS 106.7FM',
+    uri: 'https://cast-1.nucleusstreaming.com:4443/pbsfm_live_64.mp3',
+    imageSource: 'https://www.pbsfm.org.au/sites/default/files/pbs-logo-stacked-col-2014.gif',
+    info: 'Since 1979, community broadcaster PBS 106.7FM has been an integral player in Melbourne’s diverse music community – with more than 80 specialist music programs ranging from soul to garage to country to jazz – PBS is dedicated to nurturing, inspiring and championing Melbourne’s diverse music community.',
+  },
+  {
+    title: 'Skylab Radio',
+    uri: 'https://secure-stream.skylab-radio.com/live',
+    imageSource: 'https://skylab-radio.com/images/3991625fa749fb45e49a04285c716012.png',
+    info: 'Welcome to Skylab Radio Melbourne. Reclining your spirit and mind since 2018. Streaming from Romantica Studios, East Brunswick.',
   },
   {
     title: 'The Lot Radio',

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Styles.js';
-import { StyleSheet, Text, View, Image, TouchableOpacity, Button, SafeAreaView, ScrollView } from 'react-native';
+import { Text } from 'react-native';
 import { Surface } from 'react-native-paper';
 import { LinearGradient } from 'expo-linear-gradient';
 

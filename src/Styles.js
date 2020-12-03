@@ -1,18 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 
-
 const styles = StyleSheet.create({
-  // headerStyle: {
-  //   backgroundColor: '#f8f8f2',
-  // },
   welcomeSurface: {
     display: 'flex',
     width: '90%',
     height: 150,
     backgroundColor: '#151515',
     borderRadius: 5,
-    // alignItems: 'flex-start',
     justifyContent: 'center',
     paddingLeft: 20,
     paddingRight: 20,
@@ -23,14 +18,6 @@ const styles = StyleSheet.create({
     marginRight: 'auto',
     elevation: 1,
   },
-  // welcomeHeader: {
-  //   fontFamily: 'Archivo_700Bold',
-  //   fontSize: 20,
-  //   color: '#ffffff',
-  //   textAlign: 'left',
-  //   marginTop: 20,
-  //   marginLeft: 25,
-  // },
   welcomeText: {
     fontFamily: 'Archivo_500Medium',
     color: '#ffffff',
@@ -41,20 +28,16 @@ const styles = StyleSheet.create({
   homeScreen: {
     flex: 1,
     justifyContent: 'space-around',
-    // alignItems: 'center',
     backgroundColor: '#151515',
-    // fontFamily: 'Archivo_700Bold',
   },
   scrollView: {
     width: '100%',
   },
   stationBrowser: {
     display: 'flex',
-    // flex: 1,
     width: '100%',
     justifyContent: 'center',
     alignItems: 'flex-start',
-    // alignContent: 'space-around',
     flexDirection: 'row',
     flexWrap: 'wrap',
     marginTop: 20,
@@ -64,22 +47,15 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#ffffff',
     textAlign: 'center',
-    // marginLeft: 25,
   },
   stationCard: {
     display: 'flex',
-    // fontFamily: 'Archivo_700Bold',
-    // flex: 1,
     width: '27%',
     flexDirection: 'row',
     flexWrap: 'wrap',
     textAlign: 'center',
     justifyContent: 'center',
     margin: 10,
-    // elevation: 6,
-    // borderStyle: 'solid',
-    // borderColor: 'black',
-    // borderWidth: 2,
   },
   stationCardImage: {
     width: 90,
@@ -117,19 +93,12 @@ const styles = StyleSheet.create({
     height: 70,
   },
   stationInfo: {
-    // fontFamily: 'Archivo_600SemiBold',
-    // flexDirection: 'row',
-    // backgroundColor: '#fff',
     textAlign: 'center',
     width: 220,
     padding: 0,
     justifyContent: 'center',
-    // borderStyle: 'solid',
-    // borderColor: 'white',
-    // borderWidth: 2,
   },
   stationInfoText: {
-    // flexWrap: 'wrap',
     fontFamily: 'Archivo_600SemiBold',
     color: '#ffffff',
     fontSize: 18,
@@ -145,12 +114,6 @@ const styles = StyleSheet.create({
     color: '#ffffff',
     fontSize: 14,
   },
-  // largeText: {
-  //   fontSize: 22
-  // },
-  // smallText: {
-  //   fontSize: 16
-  // },
   control: {
     flexDirection: 'row',
     width: 50,
@@ -167,7 +130,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     },
-
 });
 
 export default styles;

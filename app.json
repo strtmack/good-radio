@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "drift",
+    "description": "((( drift))) is an online radio mobile app",
     "slug": "drift",
     "version": "1.0.0",
     "orientation": "portrait",

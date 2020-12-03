@@ -1,9 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import styles from './Styles';
-import { IconButton } from 'react-native-paper';
-import { LinearGradient } from 'expo-linear-gradient';
-
 
 
 export default function CustomHeader() {

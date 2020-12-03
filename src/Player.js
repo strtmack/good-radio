@@ -1,31 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
-import { Ionicons } from '@expo/vector-icons'
-import { Audio } from 'expo-av';
+import { View, TouchableOpacity } from 'react-native';
 import { IconButton, ActivityIndicator } from 'react-native-paper';
 import styles from './Styles.js';
-import { 
-  OpenSans_300Light,
-  OpenSans_300Light_Italic,
-  OpenSans_400Regular,
-  OpenSans_400Regular_Italic,
-  OpenSans_600SemiBold,
-  OpenSans_600SemiBold_Italic,
-  OpenSans_700Bold,
-  OpenSans_700Bold_Italic,
-  OpenSans_800ExtraBold,
-  OpenSans_800ExtraBold_Italic 
-} from '@expo-google-fonts/open-sans';
-import { useFonts } from 'expo-font';
 
 
 export default function Player(props) {
-
-  let [fontsLoaded] = useFonts({
-    OpenSans_400Regular,
-    OpenSans_600SemiBold,
-  });
 
   let loadWheelColors = [
     '#F5B232',
@@ -42,10 +21,6 @@ export default function Player(props) {
 
   return (
     <View style={styles.player}>
-      {/* <Image
-        style={styles.stationImage}
-        source={{ uri: 'https://cdn-profiles.tunein.com/s150238/images/logog.jpg?t=159537' }}
-      /> */}
       <View>
         {props.renderStationImage()}
       </View>
@@ -66,8 +41,6 @@ export default function Player(props) {
         )}
       </TouchableOpacity> 
       )}
-              
-
     </View>
     );
 }

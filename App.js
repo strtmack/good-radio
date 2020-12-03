@@ -1,19 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity, AppRegistry } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Text, View, Image, AppRegistry } from 'react-native';
 import { Audio } from 'expo-av';
 import styles from './src/Styles.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
-import { Button } from 'react-native-paper';
 import { name as appName } from './app.json';
 import Player from './src/Player';
-import StationCard from './src/StationCard';
 import HomeScreen from './src/HomeScreen';
 import stationList from './src/stationList';
-import StationPage from './src/StationPage';
 import CustomHeader from './src/CustomHeader';
 import AutoScrolling from 'react-native-auto-scrolling';
 import { AppLoading } from 'expo';
@@ -31,6 +26,7 @@ import {
 import { useFonts } from 'expo-font';
 
 
+// React Native Paper Theme for Material UI components
 const theme = {
   ...DefaultTheme,
   colors: {
@@ -49,82 +45,8 @@ let customFonts = {
   'Archivo_400Regular': Archivo_400Regular,
 };
 
-// function HomeScreen({ loadStation, navigation }) {
-
-//   return (
-//     <View style={styles.homeScreen}>
-//       <View style={styles.stationBrowser}>
-//         {stationList.map((station, index) =>
-//           <StationCard 
-//             title={stationList[index].title} 
-//             image={stationList[index].imageSource}
-//             stationIndex={stationList[index]}
-            
-//           />
-//         )}
-//       </View>
-//       <Text>Home Screen</Text>
-//       <Text onPress={() => loadStation('Skylab', 0)} stationTitle={'Skylab'} stationIndex={0} >Skylab Radio</Text>
-//         <Text onPress={() => loadStation('NTS', 1)} stationTitle={'NTS'} stationIndex={1} >NTS</Text>
-//       <Button
-//         mode='outlined'
-//         title='Go to Details'
-//         onPress={() => {
-//           navigation.navigate('Details', {
-//             itemId: 86,
-//             otherParam: 'testing the route params',
-//           });
-//         }}
-//       >
-//         Press me
-//       </Button>
-//     </View>
-//   );
-// }
-
-function DetailsScreen({ route, navigation }) {
-  // get the params
-  const { itemId, otherParam } = route.params;
-  return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Details Screen</Text>
-      <Text>itemId: {JSON.stringify(itemId)}</Text>
-      <Text>otherParam: {JSON.stringify(otherParam)}</Text>
-      <Button
-        title='Go to Details...again'
-        onPress={() => 
-          navigation.push('Details', {
-          itemId: Math.floor(Math.random() * 100),
-          })
-        }
-      />
-      <Button title='Go to Home' onPress={() => navigation.navigate('Home')} />
-      <Button title='Go back' onPress={() => navigation.goBack()} />
-      <Button
-        title='Go back to first screen in stack'
-        onPress={() => navigation.popToTop()}
-      />
-    </View>
-  );
-}
 
 const Stack = createStackNavigator();
-
-// const stationList = [
-//   {
-//     title: 'Skylab Radio',
-//     uri:
-//       'https://secure-stream.skylab-radio.com/live',
-//     imageSource: 'https://skylab-radio.com/images/3991625fa749fb45e49a04285c716012.png'
-//   },
-//   {
-//     title: 'NTS Radio 1',
-//     uri:
-//       'http://stream-relay-geo.ntslive.net/stream',
-//     imageSource: 'https://cdn-profiles.tunein.com/s150238/images/logog.jpg?t=159537',
-//   },
-// ]
-
 
 
 class App extends React.Component {
@@ -148,15 +70,14 @@ class App extends React.Component {
     try {
       await Audio.setAudioModeAsync({
         allowsRecordingIOS: false,
-        interruptionModeIOS: Audio.INTERRUPTION_MODE_IOS_DO_NOT_MIX,
+        interruptionModeIOS: INTERRUPTION_MODE_IOS_MIX_WITH_OTHERS,
         playsInSilentModeIOS: true,
-        interruptionModeAndroid: Audio.INTERRUPTION_MODE_ANDROID_DUCK_OTHERS,
+        interruptionModeAndroid: INTERRUPTION_MODE_ANDROID_DUCK_OTHERS,
         shouldDuckAndroid: true,
         staysActiveInBackground: true,
         playThroughEarpieceAndroid: false
       })
 
-      // this.loadAudio()
     } catch (e) {
       console.log(e)
     }
@@ -301,7 +222,6 @@ class App extends React.Component {
                 options={{ headerTitle: props => <CustomHeader {...props} /> }} >
                   {props => <HomeScreen {...props} loadStation={this.loadStation}/>}
               </Stack.Screen>
-              <Stack.Screen name='Details' component={DetailsScreen} />
               <Stack.Screen name='StationPage'>
                 {props => <StationScreen {...props} loadStation={this.loadStation} />}
               </Stack.Screen>
@@ -326,9 +246,6 @@ class App extends React.Component {
       );
     } else {
       return <AppLoading
-                // startAsync={this._loadFontsAsync}
-                // onFinish={() => this.setState({ fontsLoaded: true })}
-                // onError={console.warn} 
               />;
     }
   }

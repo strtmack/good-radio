@@ -8,7 +8,7 @@
 
 ## Installation
 
-If you have the Expo client app installed on your phone, you can test out the current published/deployed version of drift at (link)
+If you have the Expo client app installed on your phone, you can test out the current published/deployed version of drift at expo.io/@mackavelli/drift
 
 ## Build Details
 
