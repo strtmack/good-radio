@@ -34,7 +34,7 @@ const stationList = [
   {
     title: 'No Signal',
     uri: 'https://n01.radiojar.com/00bhbafk8yzuv.m4a?1606812085=&rj-tok=AAABdh2A6roA6NG6we0SKSligg&rj-ttl=5',
-    imageSource: 'https://mytuner.global.ssl.fastly.net/media/tvos_radios/n8blmxhqg7qn.jpg',
+    imageSource: 'https://djmag.com/sites/default/files/article/image/nosignalogo_0.jpg',
     info: "No Signal is a home for the wave of New Black Radio. "
   },
   {

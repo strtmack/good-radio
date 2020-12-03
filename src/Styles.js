@@ -1,5 +1,14 @@
 import { StyleSheet } from 'react-native';
-
+import { 
+  Archivo_400Regular,
+  Archivo_400Regular_Italic,
+  Archivo_500Medium,
+  Archivo_500Medium_Italic,
+  Archivo_600SemiBold,
+  Archivo_600SemiBold_Italic,
+  Archivo_700Bold,
+  Archivo_700Bold_Italic 
+} from '@expo-google-fonts/archivo'
 
 const styles = StyleSheet.create({
   welcomeSurface: {
