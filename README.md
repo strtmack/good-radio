@@ -1,6 +1,7 @@
 # ((( drift )))
 
-![Screenshot] (https://github.com/stuart-mack/drift/blob/master/assets/screenshot.png)
+<img src="assets/splash.png" alt="screenshot.png" height="300">
+<img src="assets/screenshot.png" alt="screenshot.png" height="300">
 
 ## About
 
