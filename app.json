@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "drift",
-    "description": "((( drift))) is an online radio mobile app",
+    "name": "Good Radio",
+    "description": "((( Good Radio ))) is an online radio mobile app",
     "slug": "drift",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,15 +14,11 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
-        "UIBackgroundModes": [
-          "audio"
-        ]
+        "UIBackgroundModes": ["audio"]
       }
     },
     "android": {

@@ -1,18 +1,18 @@
-# ((( drift )))
+# ((( Good Radio )))
 
-<img src="assets/splash.png" alt="screenshot.png" height="300"> <img src="assets/screenshot.png" alt="screenshot.png" height="300">
+<!-- <img src="assets/splash.png" alt="screenshot.png" height="300"> <img src="assets/screenshot.png" alt="screenshot.png" height="300"> -->
 
 ## About
 
-((( drift ))) is a mobile app for listening to online radio, from a small, curated selection of stations. It was built with Expo/React Native, as my first foray into those tools.
+((( Good Radio ))) is a mobile app for listening to online radio, from a small, curated selection of independent, music-focussed stations. Good Radio was built with Expo/React Native.
 
 ## Installation
 
-If you have the Expo client app installed on your phone, you can test out the current published/deployed version of drift at expo.io/@mackavelli/drift
+If you have the Expo client app installed on your phone, you can test out the current published/deployed version of Good Radio at expo.io/@mackavelli/drift
 
 ## Build Details
 
-Some of the tools, libraries, and frameworks utilised by ((( drift ))):
+Some of the tools, libraries, and frameworks utilised by ((( Good Radio ))):
 
 - Expo (https://expo.io)
 - Expo Audio API for loading and playback of audio streams
